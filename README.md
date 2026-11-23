@@ -22,7 +22,13 @@
 1. 成功避开高通基带对 7 字节前缀 `A0000005591010` 的拦截规则（`0x52`）。
 2. 智能卡收到 `A00000055910` 后按协议前缀匹配到首位的标准 ISD-R 应用（`A0000005591010FFFFFFFF8900000100`），后续所有 ES10x 读卡、下载/写入、启用/切换、删除操作全部恢复正常。
 
-实测已在小米 6（`MSM8998`，基带 `AT20-0506_2249_2f010e6`，Android 17 GSI + KernelSU）上跑通完整 OMAPI 读卡与 eUICC 管理。
+实测已在小米 6（`MSM8998`，基带 `AT20-0506_2249_2f010e6`，Android 17 GSI + KernelSU）上跑通完整 OMAPI 读卡与 eSIM 下载、写入、删除全流程。
+
+### 实测截图（小米 6 / Saily eSIM 写入实测）
+
+| EasyEUICC 完整下载并写入 eSIM 配置文件 | Saily 端识别设备为 `MI 6` |
+| :---: | :---: |
+| <img src="docs/images/easyeuicc-mi6-download.png" width="320" alt="EasyEUICC downloading and writing eSIM on Mi 6" /> | <img src="docs/images/saily-mi6-device.jpg" width="320" alt="Saily showing eSIM installed on MI 6" /> |
 
 ---
 
