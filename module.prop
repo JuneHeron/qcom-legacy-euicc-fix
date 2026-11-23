@@ -1,0 +1,6 @@
+id=qcom_legacy_euicc_fix
+name=Qualcomm Legacy eUICC Fix
+version=v1.0.0
+versionCode=100
+author=JuneHeron
+description=Enable OMAPI UICC and bypass Qualcomm legacy baseband ISD-R prefix (A0000005591010) block via 6-byte partial AID (A00000055910) for EasyEUICC/OpenEUICC (v1.7.2).
